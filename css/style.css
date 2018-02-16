@@ -1,4 +1,52 @@
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #dadada;
-  font-size: 10px;
+}
+
+.container {
+  display: block;
+  text-align: center;
+}
+
+div {
+  position: relative;
+  text-align: left;
+  padding-bottom: 10px;
+  max-width: 490px;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+img {
+  max-width: none;
+  height: 341px;
+}
+
+@media screen and (min-width: 490px){
+  div {
+    width: 48%;
+    margin-left: 10px;
+  }
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 1.5em;
+  font-variant-caps: all-petite-caps;
+  letter-spacing: .2rem;
+  padding: 1em;
+  text-align: center;
+}
+
+h2 {
+  font-family: serif;
+  font-size: 1.5em;
+  position: absolute;
+  top: 24px;
+  left: 24px;
 }
